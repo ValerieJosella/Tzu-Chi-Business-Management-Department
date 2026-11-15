@@ -197,7 +197,7 @@ nav.main a.active{color:var(--green)}
 .note{margin-top:28px;padding:16px 18px;border-radius:10px;background:var(--green-soft);font-size:.9375rem;color:var(--ink)}
 
 /* ---------- intro band + history ---------- */
-.cur-band.intro-band{background-image:url("images/campus/intro-bg.jpg");background-position:center 55%}
+.cur-band.intro-band{background-image:url("intro-bg.jpg");background-position:center 55%}
 .cur-band.intro-band::before{background:linear-gradient(90deg,rgba(10,20,15,.82) 0%,rgba(10,20,15,.66) 55%,rgba(10,20,15,.45) 100%)}
 .intro-band .intro-text{max-width:720px}
 .intro-band .intro-text p{color:rgba(255,255,255,.92)}
@@ -215,7 +215,7 @@ nav.main a.active{color:var(--green)}
 
 /* ---------- curriculum ---------- */
 .cur{background:var(--bg-soft);padding-bottom:clamp(56px,8vw,96px)}
-.cur-band{position:relative;padding-block:clamp(64px,9vw,112px);background:#26332D url("images/campus/curriculum-bg.jpg") center 30%/cover no-repeat;color:#fff}
+.cur-band{position:relative;padding-block:clamp(64px,9vw,112px);background:#26332D url("curriculum-bg.jpg") center 30%/cover no-repeat;color:#fff}
 .cur-band::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,15,.45) 0%,rgba(10,20,15,.7) 100%)}
 .cur-band .wrap{position:relative}
 #introduction .groups{margin-top:56px}
@@ -337,7 +337,7 @@ footer a{color:#fff}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#home">
-      <img class="logo" src="images/logo.png" alt="" width="360" height="98">
+      <img class="logo" src="logo.png" alt="" width="360" height="98">
       <span class="brand-text">
         <strong><span class="en">Dept. of Business Management</span><span class="zh">經營管理學系</span></strong>
         <small><span class="en">Tzu Chi University</span><span class="zh">慈濟大學</span></small>
@@ -366,16 +366,16 @@ footer a{color:#fff}
 <section class="hero" id="home">
   <div class="hero-media">
     <div class="hero-slides" id="heroSlides">
-      <img class="on" src="images/hero/hero-1.jpg" alt="Tzu Chi University main building">
-      <img src="images/hero/hero-2.jpg" alt="Students' hands on open textbooks during a study session" loading="lazy">
-      <img src="images/hero/hero-3.jpg" alt="Tzu Chi University main building seen through pine branches" loading="lazy">
-      <img src="images/hero/hero-4.jpg" alt="Two students on the lawn in front of a campus building" loading="lazy">
-      <img src="images/hero/hero-5.jpg" alt="Arched walkway looking onto the campus trees" loading="lazy">
-      <img src="images/hero/hero-6.jpg" alt="Buddhist Tzu Chi University entrance sign" loading="lazy">
+      <img class="on" src="hero-1.jpg" alt="Tzu Chi University main building">
+      <img src="hero-2.jpg" alt="Students' hands on open textbooks during a study session" loading="lazy">
+      <img src="hero-3.jpg" alt="Tzu Chi University main building seen through pine branches" loading="lazy">
+      <img src="hero-4.jpg" alt="Two students on the lawn in front of a campus building" loading="lazy">
+      <img src="hero-5.jpg" alt="Arched walkway looking onto the campus trees" loading="lazy">
+      <img src="hero-6.jpg" alt="Buddhist Tzu Chi University entrance sign" loading="lazy">
     </div>
-    <!-- Optional: a looping video saved as video/hero.mp4 plays on top of the slideshow -->
+    <!-- Optional: a looping video saved as hero.mp4 plays on top of the slideshow -->
     <video id="heroVideo" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-      <source src="video/hero.mp4" type="video/mp4">
+      <source src="hero.mp4" type="video/mp4">
     </video>
   </div>
   <div class="hero-dots" id="heroDots" aria-label="Slideshow"></div>
@@ -596,25 +596,25 @@ footer a{color:#fff}
   /* ===== Faculty (from the official faculty page 師資介紹) ===== */
   var P="https://mdm.tcu.edu.tw/var/file/21/1021/pictures/";
   var faculty=[
-    {en:"Dr. Chen-Ju Lin",zh:"林珍如",r:["Professor & Department Chair","教授兼系主任"],chair:1,d:["Ph.D., National Dong Hwa University","國立東華大學企業管理博士"],t:[["Organizational Creativity","組織創造力"],["E-Communication & Marketing","電子傳播與行銷"],["Service Management","服務業管理"]],f:"org mkt",img:"images/faculty/chen-ju-lin.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66199,r914.php?Lang=zh-tw"},
-    {en:"Dr. Wen-Chen Lo",zh:"羅玟甄",r:["Associate Professor","副教授"],d:["Ph.D., Tamkang University","淡江大學管理科學研究所博士"],t:[["Financial Management","財務管理"],["General Management","一般管理"]],f:"fin",img:"images/faculty/wen-chen-lo.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-63286,r914.php?Lang=zh-tw"},
-    {en:"Dr. Kun-Tzu Yu",zh:"游崑慈",r:["Associate Professor","副教授"],d:["Ph.D., National Taiwan University of Science and Technology","國立台灣科技大學工業管理系博士"],t:[["Quality Management","品質管理"],["Management Mathematics","數學管理"],["Statistics","數理統計"]],f:"fin",img:"images/faculty/kun-tzu-yu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58487,r914.php?Lang=zh-tw"},
-    {en:"Dr. Yu-Ming Kuo",zh:"郭又銘",r:["Associate Professor & Dean of Global Affairs","副教授兼全球事務長"],d:["Ph.D., National Chung Cheng University","國立中正大學企業管理學系博士"],t:[["Marketing Management","行銷管理"],["Consumer Behavior","消費者行為"],["Human Resources","人力資源管理"]],f:"mkt org",img:"images/faculty/yu-ming-kuo.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58568,r914.php?Lang=zh-tw"},
-    {en:"Dr. Hwang-Yeh Chen",zh:"陳皇曄",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Marketing Management","行銷管理"],["Internet Marketing","網絡營銷"],["CRM","客戶關係管理"]],f:"mkt data",img:"images/faculty/hwang-yeh-chen.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58677,r914.php?Lang=zh-tw"},
-    {en:"Dr. Hsuan-Ling Feng",zh:"馮軒綾",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Cost Analysis","成本分析"],["Financial Reporting","財務報告分析"],["Performance Management","績效管理"]],f:"fin",img:"images/faculty/hsuan-ling-feng.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58679,r914.php?Lang=zh-tw"},
-    {en:"Dr. Chun-Min Lin",zh:"林俊銘",r:["Assistant Professor","助理教授兼校務研究中心資料庫組組長"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系資管組博士"],t:[["Database Systems","資料庫系統"],["Text Mining & Digital Marketing","文字探勘數位行銷"],["E-learning","數位學習"]],f:"data mkt",img:"images/faculty/chun-min-lin.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58680,r914.php?Lang=zh-tw"},
-    {en:"Dr. Mei-Hui Su",zh:"蘇美惠",r:["Assistant Professor","助理教授"],d:["Ph.D., National Taiwan University","國立台灣大學農藝學系博士"],t:[["Circular Economy","循環經濟"],["Market Survey","市場調查"],["Project Management","專案管理"]],f:"fin",img:"images/faculty/mei-hui-su.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58682,r914.php?Lang=zh-tw"},
-    {en:"Dr. I-Cheng Hsu",zh:"徐宜成",r:["Assistant Professor","助理教授兼觀光餐飲系主任"],d:["Ph.D. Marketing, Griffith University, Australia","澳洲格里菲斯大學行銷博士"],t:[["Marketing Management","行銷管理"],["Service Management","服務業管理"],["Economics","經濟學"]],f:"mkt tour",img:"images/faculty/i-cheng-hsu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58684,r914.php?Lang=zh-tw"},
-    {en:"Dr. Sean Hsin-Hung Lin",zh:"林信宏",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Tourism Marketing","觀光行銷"],["Digital Marketing","數位行銷管理"],["Regional Revitalization","地方創生"]],f:"tour mkt data",img:"images/faculty/sean-hsin-hung-lin.jpg",u:"https://mdm.tcu.edu.tw/p/404-1021-58685.php?Lang=zh-tw"},
-    {en:"Dr. I-Ting Chen",zh:"陳逸庭",r:["Assistant Professor","助理教授"],d:["Ph.D., Sheffield Hallam University, UK","英國雪菲爾赫倫大學組織管理學博士"],t:[["Hospitality Management","接待業管理"],["Service Quality","優質服務"],["Sustainable Tourism","永續與鄉村旅遊"]],f:"tour org",img:"images/faculty/i-ting-chen.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66201,r914.php?Lang=zh-tw"},
-    {en:"Dr. Yuh-Jen Wu",zh:"吳玉珍",r:["Assistant Professor","助理教授"],d:["Ph.D. Education, National Dong Hwa University","國立東華大學教育博士"],t:[["English for Specific Purposes","專業英語"],["Corpus Research","語料庫研究"],["Travel Industry","旅行業經營與管理"]],f:"tour data",img:"images/faculty/yuh-jen-wu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66203,r914.php?Lang=zh-tw"},
-    {en:"Dr. Konstantin Weicht",zh:"陳康庭",r:["Assistant Professor","助理教授"],d:["Ph.D., Sheffield Hallam University, UK","英國雪菲爾赫倫大學組織管理學博士"],t:[["Organizational Behavior","組織行為"],["CSR","企業社會責任"],["Strategic Leadership","策略領導"]],f:"org",img:"images/faculty/konstantin-weicht.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66202,r914.php?Lang=zh-tw"}
+    {en:"Dr. Chen-Ju Lin",zh:"林珍如",r:["Professor & Department Chair","教授兼系主任"],chair:1,d:["Ph.D., National Dong Hwa University","國立東華大學企業管理博士"],t:[["Organizational Creativity","組織創造力"],["E-Communication & Marketing","電子傳播與行銷"],["Service Management","服務業管理"]],f:"org mkt",img:"chen-ju-lin.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66199,r914.php?Lang=zh-tw"},
+    {en:"Dr. Wen-Chen Lo",zh:"羅玟甄",r:["Associate Professor","副教授"],d:["Ph.D., Tamkang University","淡江大學管理科學研究所博士"],t:[["Financial Management","財務管理"],["General Management","一般管理"]],f:"fin",img:"wen-chen-lo.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-63286,r914.php?Lang=zh-tw"},
+    {en:"Dr. Kun-Tzu Yu",zh:"游崑慈",r:["Associate Professor","副教授"],d:["Ph.D., National Taiwan University of Science and Technology","國立台灣科技大學工業管理系博士"],t:[["Quality Management","品質管理"],["Management Mathematics","數學管理"],["Statistics","數理統計"]],f:"fin",img:"kun-tzu-yu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58487,r914.php?Lang=zh-tw"},
+    {en:"Dr. Yu-Ming Kuo",zh:"郭又銘",r:["Associate Professor & Dean of Global Affairs","副教授兼全球事務長"],d:["Ph.D., National Chung Cheng University","國立中正大學企業管理學系博士"],t:[["Marketing Management","行銷管理"],["Consumer Behavior","消費者行為"],["Human Resources","人力資源管理"]],f:"mkt org",img:"yu-ming-kuo.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58568,r914.php?Lang=zh-tw"},
+    {en:"Dr. Hwang-Yeh Chen",zh:"陳皇曄",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Marketing Management","行銷管理"],["Internet Marketing","網絡營銷"],["CRM","客戶關係管理"]],f:"mkt data",img:"hwang-yeh-chen.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58677,r914.php?Lang=zh-tw"},
+    {en:"Dr. Hsuan-Ling Feng",zh:"馮軒綾",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Cost Analysis","成本分析"],["Financial Reporting","財務報告分析"],["Performance Management","績效管理"]],f:"fin",img:"hsuan-ling-feng.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58679,r914.php?Lang=zh-tw"},
+    {en:"Dr. Chun-Min Lin",zh:"林俊銘",r:["Assistant Professor","助理教授兼校務研究中心資料庫組組長"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系資管組博士"],t:[["Database Systems","資料庫系統"],["Text Mining & Digital Marketing","文字探勘數位行銷"],["E-learning","數位學習"]],f:"data mkt",img:"chun-min-lin.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58680,r914.php?Lang=zh-tw"},
+    {en:"Dr. Mei-Hui Su",zh:"蘇美惠",r:["Assistant Professor","助理教授"],d:["Ph.D., National Taiwan University","國立台灣大學農藝學系博士"],t:[["Circular Economy","循環經濟"],["Market Survey","市場調查"],["Project Management","專案管理"]],f:"fin",img:"mei-hui-su.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58682,r914.php?Lang=zh-tw"},
+    {en:"Dr. I-Cheng Hsu",zh:"徐宜成",r:["Assistant Professor","助理教授兼觀光餐飲系主任"],d:["Ph.D. Marketing, Griffith University, Australia","澳洲格里菲斯大學行銷博士"],t:[["Marketing Management","行銷管理"],["Service Management","服務業管理"],["Economics","經濟學"]],f:"mkt tour",img:"i-cheng-hsu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-58684,r914.php?Lang=zh-tw"},
+    {en:"Dr. Sean Hsin-Hung Lin",zh:"林信宏",r:["Assistant Professor","助理教授"],d:["Ph.D., National Dong Hwa University","國立東華大學企業管理學系博士"],t:[["Tourism Marketing","觀光行銷"],["Digital Marketing","數位行銷管理"],["Regional Revitalization","地方創生"]],f:"tour mkt data",img:"sean-hsin-hung-lin.jpg",u:"https://mdm.tcu.edu.tw/p/404-1021-58685.php?Lang=zh-tw"},
+    {en:"Dr. I-Ting Chen",zh:"陳逸庭",r:["Assistant Professor","助理教授"],d:["Ph.D., Sheffield Hallam University, UK","英國雪菲爾赫倫大學組織管理學博士"],t:[["Hospitality Management","接待業管理"],["Service Quality","優質服務"],["Sustainable Tourism","永續與鄉村旅遊"]],f:"tour org",img:"i-ting-chen.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66201,r914.php?Lang=zh-tw"},
+    {en:"Dr. Yuh-Jen Wu",zh:"吳玉珍",r:["Assistant Professor","助理教授"],d:["Ph.D. Education, National Dong Hwa University","國立東華大學教育博士"],t:[["English for Specific Purposes","專業英語"],["Corpus Research","語料庫研究"],["Travel Industry","旅行業經營與管理"]],f:"tour data",img:"yuh-jen-wu.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66203,r914.php?Lang=zh-tw"},
+    {en:"Dr. Konstantin Weicht",zh:"陳康庭",r:["Assistant Professor","助理教授"],d:["Ph.D., Sheffield Hallam University, UK","英國雪菲爾赫倫大學組織管理學博士"],t:[["Organizational Behavior","組織行為"],["CSR","企業社會責任"],["Strategic Leadership","策略領導"]],f:"org",img:"konstantin-weicht.jpg",u:"https://mdm.tcu.edu.tw/p/406-1021-66202,r914.php?Lang=zh-tw"}
   ];
   document.getElementById("facultyGrid").innerHTML=faculty.map(function(p){
     var ini=p.en.replace("Dr. ","").split(" ").map(function(w){return w[0];}).join("").slice(0,2);
     return '<article class="prof" data-f="'+p.f+'">'+
       '<div class="pic">'+(p.chair?'<span class="chair-badge">'+bi("Department Chair","系主任")+'</span>':'')+
-      '<img src="'+p.img+'" alt="'+esc(p.en)+'" loading="lazy"><span class="ini"><span>'+ini+'</span><code>images/faculty/'+p.en.replace("Dr. ","").toLowerCase().split(" ").join("-")+'.jpg</code></span></div>'+
+      '<img src="'+p.img+'" alt="'+esc(p.en)+'" loading="lazy"><span class="ini"><span>'+ini+'</span><code>'+p.en.replace("Dr. ","").toLowerCase().split(" ").join("-")+'.jpg</code></span></div>'+
       '<div class="body"><div class="role">'+bi(p.r[0],p.r[1])+'</div>'+
       '<h3>'+bi(p.en,p.zh)+'</h3>'+
       '<div class="deg">'+bi(p.d[0],p.d[1])+'</div>'+
@@ -681,7 +681,7 @@ footer a{color:#fff}
     img.addEventListener("load",function(){img.parentElement.classList.remove("missing");});
   });
 
-  /* ===== Hero video: green background until video/hero.mp4 is added ===== */
+  /* ===== Hero video: green background until hero.mp4 is added ===== */
   var hero=document.getElementById("home"), vid=document.getElementById("heroVideo");
   function noVideo(){vid.style.display="none";}
   vid.querySelector("source").addEventListener("error",noVideo);
